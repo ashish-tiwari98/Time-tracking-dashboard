@@ -15,15 +15,45 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    margin:auto;
 }
 
+.col{
+    margin:10px;
+}
+
+.col-sm-3{
+    padding:10px;
+}
 .card{
     background-color: hsl(235, 46%, 20%); 
+    height:100%;
+    width:14rem;
+}
+
+.col-sm-9 .card-header{
+    position: relative;
+    height:30px;
+    overflow:hidden;
+}
+
+.col-sm-3 .card-header{
+    height:80%;
+}
+
+.header-img{
+    width:50px;
+    position: absolute;
+    top:-8px;
 }
 
 .profile{
     background-color: hsl(246, 80%, 60%);
+}
+
+#profile-pic{
+    width:40px;
+    border-radius: 100%;
+    border: 2px solid white;
 }
 
 .work{
