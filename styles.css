@@ -24,10 +24,12 @@ body{
 .card{
     background-color: hsl(235, 46%, 20%); 
     height:100%;
+    border-radius:10px;
 }
 
 .col-sm-3 .card-header{
     height:80%;
+    border-radius:12px !important;
 }
 
 .bottom{
@@ -35,8 +37,23 @@ body{
 }
 
 .col-sm-9 .card-header{
-    height:30px;
-    overflow:hidden;
+    height:35px;
+    overflow:hidden; 
+}
+
+.col-sm-9 .card-body {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 12px !important;
+    position: relative;
+    top:-7px;
+}
+
+.col-sm-9 .card-body:hover , .col-sm-9 .card:hover{
+    background-color: hsl(235, 46%, 40%);
+}
+
+.col-sm-9 .card:hover >.card-body{
+    background-color: hsl(235, 46%, 40%);
 }
 
 .header-img{
@@ -51,9 +68,10 @@ body{
 }
 
 #profile-pic{
-    width:40px;
+    width:50px;
     border-radius: 100%;
     border: 2px solid white;
+    margin-top:10px;
 }
 
 a{
