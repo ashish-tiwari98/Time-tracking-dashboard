@@ -10,11 +10,18 @@ body{
     color:white;
 }
 
+@media only screen and (min-width:573px){
 .vertical{
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+.tabs{
+    float: left;
+    clear:left;
+}
 }
 
 .container{
@@ -81,10 +88,6 @@ a{
     color: hsl(236, 100%, 87%);
 }
 
-.tabs{
-    float: left;
-    clear:left;
-}
 
 .tabs:hover{
     color:white;
@@ -183,7 +186,7 @@ a.selected{
     
 }
 
-@media only screen and (max-width:564px){
+@media only screen and (max-width:572px){
     .row{
         display: block;
     }
@@ -192,8 +195,58 @@ a.selected{
         margin-bottom: 22px;
     }
 
-    *{
-        overflow:scroll;
+    .container{
+        margin:40px auto;
+    }
+
+    .col-sm-3 .card-header{
+       height:140px;
+       padding:15px;
+    }
+    
+    .col-sm-3 img{
+        width:25% !important;
+        position: relative;
+        left:4%;
+    }
+    
+    .col-sm-3 p {
+        display: inline-block;
+        margin-left:7%;
+        position: relative;
+        top:-5px;
+    }
+
+    .col-sm-3 h1{
+        position: relative;
+        top:-40px;
+        left:33%;
+        font-size: 25px;
+    }
+
+    .duration{
+        float:left;
+        clear:left;
+    }
+
+    h6{
+        float:left;
+    }
+
+    .previous{
+        float: right;
+        margin-top: 10px;
+    }
+
+    .tabs{
+        display: inline-block;
+        width:32.5%;
+        text-align: center;
+        padding:5px;
+    }
+
+    .col-sm-9 .card-text{
+        margin-top:18px;
     }
 }
 
