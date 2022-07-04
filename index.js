@@ -1,13 +1,15 @@
-async function getdata(pos){
-   await fetch('data.json')
-  .then(res => res.json())
-  .then(data => obj = data);
-  return  obj[pos];
-}
-
-for(var i=0;i<6;i++){
-let data = getdata(i);
-data.then(function(res){
-    document.querySelector(".task-heading").innerHTML=res.timeframes.daily.current;
+import data from './data.json' assert { type: "json" };
+var present=document.querySelectorAll(".duration");
+var previous=document.querySelectorAll(".previous");
+$(".tabs").click(function(){
+  $("a.selected").removeClass("selected");
+  $(this).addClass("selected");
+  var id=$(this).attr("id");
+  for(var i=1;i<=6;i++){
+    var data1=data[i];
+    console.log(data1.timeframes[id].current);
+    $(present[i-1]).text(data1.timeframes[id].current+"hrs");
+    $(previous[i-1]).text("Last Week - "+data1.timeframes[id].previous+"hrs"); 
+  }
 });
-}
+
