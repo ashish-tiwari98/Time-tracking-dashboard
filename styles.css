@@ -200,7 +200,7 @@ a.selected{
     }
 
     .col-sm-3 .card-header{
-       height:140px;
+       height:130px;
        padding:15px;
     }
     
@@ -246,7 +246,7 @@ a.selected{
     }
 
     .col-sm-9 .card-text{
-        margin-top:1px;
+        margin-top:18px;
     }
 }
 
