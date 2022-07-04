@@ -7,7 +7,6 @@ $(".tabs").click(function(){
   var id=$(this).attr("id");
   for(var i=1;i<=6;i++){
     var data1=data[i];
-    console.log(data1.timeframes[id].current);
     $(present[i-1]).text(data1.timeframes[id].current+"hrs");
     $(previous[i-1]).text("Last Week - "+data1.timeframes[id].previous+"hrs"); 
   }

@@ -19,17 +19,18 @@ body{
 
 .container{
     width:75%;
+    padding:15px;
 }
 
 .card{
     background-color: hsl(235, 46%, 20%); 
     height:100%;
-    border-radius:10px;
+    border-radius:15px;
 }
 
 .col-sm-3 .card-header{
     height:80%;
-    border-radius:12px !important;
+    border-radius:15px !important;
 }
 
 .bottom{
@@ -39,11 +40,12 @@ body{
 .col-sm-9 .card-header{
     height:35px;
     overflow:hidden; 
+    border-radius:15px 15px 0 0  !important;
 }
 
 .col-sm-9 .card-body {
     background-color: hsl(235, 46%, 20%);
-    border-radius: 12px !important;
+    border-radius: 15px !important;
     position: relative;
     top:-7px;
 }
@@ -134,7 +136,7 @@ a.selected{
     background-color: hsl(43, 84%, 65%);
 }
 
-.duration, .previous{
+.card{
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -169,5 +171,29 @@ a.selected{
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@media only screen and (max-width:792px ){
+    .col-sm-3,.col-sm-9{
+        width: 100%;
+    }
+    .col-sm-9{
+        margin-top:22px;
+    }
+    
+}
+
+@media only screen and (max-width:564px){
+    .row{
+        display: block;
+    }
+
+    .col{
+        margin-bottom: 22px;
+    }
+
+    *{
+        overflow:scroll;
+    }
 }
 
